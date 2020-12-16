@@ -20,18 +20,20 @@ p {
   margin: 0;
 }
 
+.header-portfolio{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding: 25px;
+    border-bottom:  1px solid #757575;
+}
 .header {
     display:flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 25px;
 }
-.features-container {
-    box-sizing: border-box;
-    width: 1170px;
-   justify-content: space-between;
-   align-content: space-evenly;
-}
+
 .logo-link {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -71,18 +73,22 @@ p {
     justify-content: space-between;
     align-items: center;
     padding-right: 50px;
+    text-decoration: none;
+    color: #212121;
 }
 .nav-links-studio-one{
     text-decoration: none;
     color: var(--accent-color);
     display: flex;
     align-items: center;
+    padding-right: 50px;
 }
 .nav-links-portfolio-two{
     text-decoration: none;
     color: var(--accent-color);
     display: flex;
     align-items: center;
+    padding-right: 50px;
 }
 
 .nav-links-contacts{
@@ -102,6 +108,7 @@ p {
     color: var(--accent-color);
     text-decoration: none;
     padding-right:50px;
+    padding-left: 331px;
 }
 .email-two{
     font-family: "roboto", sans-serif;
@@ -113,13 +120,15 @@ p {
     color: #757575;
     text-decoration: none;
     padding-right:50px;
+    padding-left: 331px;
 }
 .address-header:hover,
 .address-header:focus,
 
 .address-header{
-    padding-left:331px;
+    display: inline;
 }
+
 .phone{
     font-family: "roboto", sans-serif;
     font-style: normal;
@@ -129,17 +138,15 @@ p {
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
-}
+}   
 
 .hero {
     background-color: #2f303a;
     width: 100%;
-    padding-top: 70px;
+    margin-top: 70px;
     margin: 0 auto;
     padding: 200px 0;
     text-align: center;
-    padding-left: 452px;
-    padding-right: 452px;
 }
 
 .hero-title{
@@ -153,10 +160,11 @@ p {
     Text-transform: Uppercase;
     color: #ffff;
     width: 696px;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 body {
     background-color: #ffff;
@@ -165,8 +173,13 @@ body {
     font-weight: 500;
     font-size: 14px;
     list-style: none;
+    margin: 0;
 }
-
+.team {
+    background-color: #F5F4FA;
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
 .button-index {
     font-family: "roboto", sans-serif;
     font-style: normal;
@@ -180,13 +193,11 @@ body {
     box-shadow: 0px, 4px, 4px, rgba(0,0,0,0.15);
     border-radius: 4px;
     border: none;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     left: 500px;
     top: 630px;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
 }
 .button {
     font-family: "roboto", sans-serif;
@@ -200,19 +211,18 @@ body {
     background-color: var(--accent-color);
     box-shadow: 0px, 4px, 4px, rgba(0,0,0,0.15);
     border-radius: 4px;
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
     cursor: pointer;
 }
-.list {
-    list-style: none;
+.features {
     padding-top: 94px;
     padding-bottom: 94px;
-    padding-right: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+}
+.list {
+    list-style: none;
     justify-content: space-between;
     display: flex;
 }
@@ -225,9 +235,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-    padding-top: 94px;
-    margin-top: 774px;
-    padding-right:30px;
+    margin-top: 94px;
 }
 .text {
     font-family: 'roboto', sans-serif;
@@ -239,9 +247,7 @@ body {
     color: #757575;
     width: 270px;
     height: 75px;
-    padding-top: 10px;
-    padding-bottom: 94px;
-    padding-right: 30px;
+    margin-top: 10px;
 }
 *, ::after, ::before{
     box-sizing: border-box;
@@ -251,11 +257,11 @@ body {
 }
 .picture-list{
     list-style: none;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
-    padding-right: 30px;
+    /* padding-bottom: 94px; */
+    /* padding-right: 30px; */
 }
 .pictures-heading{
    font-family: 'roboto', sans-serif;
@@ -267,6 +273,10 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
     display: block;
+    padding-bottom: 50px;
+}
+.pictures{
+    padding-bottom: 94px;
 }
 .team-heading{
     font-family: 'roboto', sans-serif;
@@ -277,6 +287,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-bottom: 50px;
 }
 .photo{
     width: 100%;
@@ -287,14 +298,12 @@ body {
     font-family: 'roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.1875;
-    text-align: left;
     letter-spacing: 0.03em;
     color: #212121;
     list-style: none;
-    padding: 20px 24px;
-    padding-right: 15px;
+    margin-bottom: 10px;
 }
 .name-index{
     font-family: 'roboto', sans-serif;
@@ -306,8 +315,8 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
     list-style: none;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .image{
     width: 100%;
@@ -316,6 +325,7 @@ body {
 }
 .image-one{
     padding-right: 30px;
+    width: 370px;
 }
 
 .description{
@@ -323,13 +333,10 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 1.1875;
-    text-align: left;
     letter-spacing: 0.03em;
     color: #757575;
     list-style: none;
-    padding: 20px 24px;
-    padding-right: 15px;
+    line-height: 1.1875;
 }
 .description-index{
     font-family: 'roboto', sans-serif;
@@ -341,12 +348,12 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
     list-style: none;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .footer{
     background: #2F303A;
-    padding: 50px;
-    padding-top: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address{
     font-family: 'roboto', sans-serif;
@@ -356,7 +363,7 @@ body {
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #ffff;
-    padding-top: 25px;
+    margin-top: 25px;
 }
 .contact-info{
     font-family: 'roboto', sans-serif;
@@ -367,7 +374,7 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255,255,255,0.6);
     text-decoration: none;
-    padding-top:10px;
+    margin-top:10px;
     display: block;
 }
 .buttons {
@@ -384,6 +391,7 @@ body {
     display: inline-block;
     padding-right: 8px;
     cursor: pointer;
+    border: none;
 }
 .main-button{
     font-family: "roboto", sans-serif;
@@ -399,31 +407,44 @@ body {
     border-radius: 4px;
     list-style: none;
     cursor: pointer;
+    border: none;
 }
-.button-container {
-    padding-left: 495px;
-    padding-bottom: 50px;
+.button-section {
+    margin-bottom: 50px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.card-container{
-    width: 1200px;
-    padding-top: 50px;
-    padding: 0 15px;
-    margin: 0 auto;
+.cards {
+    margin-bottom: 94px;
+}
+.cards-section{
     justify-content:space-between;
+    padding-top: 94px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-description{
+    padding: 20px 24px;
+    line-height: 1.5;
+    text-align: left;
 }
 .card-two{
-    background: #fff;
     border: 1px solid #eee;
-    box-sizing: border-box;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    width: 100%;
-    margin: 0;
-    flex-basis: calc(100%/3);
-    padding-right: 30px;
+    width: 370px;;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
-
+.card-two:nth-child(3n) {
+    margin-right: 0;
+}
+.card-two:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
 .card {
     background: #fff;
     border: 1px solid #eee;
@@ -434,10 +455,11 @@ body {
     margin: 0 15px;
 }
 .container{
-    width: auto;
-    padding-right: 30px;
-    background: #F5F4FA;
-    padding-top:94px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Studio-footer{
     color: #fff;

@@ -97,7 +97,12 @@ p {
     display: flex;
     align-items: center;
 } 
-
+.icon-envelope{
+    padding-right:10px;
+}
+.icon-phone{
+    padding-right: 10px;
+}
 .email{
     font-family: "roboto", sans-serif;
     font-style: normal;

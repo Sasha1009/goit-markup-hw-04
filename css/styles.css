@@ -146,12 +146,19 @@ p {
 }   
 
 .hero {
-    background-color: #2f303a;
-    width: 100%;
+    background-color: #ffff;
     margin-top: 70px;
     margin: 0 auto;
     padding: 200px 0;
     text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+    max-width: 1600px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-title{
@@ -459,6 +466,14 @@ body {
     width: 100%;
     margin: 0 15px;
 }
+.icon-instagram{
+    cursor: pointer;
+    fill: #afb1b8;
+}
+.icon-instagram:hover,
+.icon-instagram:focus{
+    fill: var(--accent-color);
+}
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -468,4 +483,4 @@ body {
 }
 .Studio-footer{
     color: #fff;
-}
+}}

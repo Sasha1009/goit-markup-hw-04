@@ -98,7 +98,16 @@ p {
     align-items: center;
 } 
 .icon-envelope{
-    padding-right:10px;
+    margin-right:10px;
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    fill:  #afb1b8;
 }
 .icon-phone{
     padding-right: 10px;
@@ -232,11 +241,29 @@ body {
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px;
+    min-height: 251px;
+    display: block;
 }
 .list {
     list-style: none;
     justify-content: space-between;
     display: flex;
+}
+.features-item{
+    max-width: 270px;
+    margin-right: 30px;
+    
+}
+.features-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
 }
 .b-heading {
     font-family: 'roboto', sans-serif;
@@ -476,6 +503,16 @@ body {
 }
 .container{
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.connected {
+    list-style: none;
+    flex-wrap: wrap;
+    display: inline-block;
+    align-items: baseline;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;

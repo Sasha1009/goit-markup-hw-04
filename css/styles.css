@@ -402,24 +402,20 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 .social-network{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 206px;
-    height: 44px;
-    margin: 16px auto 30px auto;
+    margin: 0 auto;
 }
 .networks{
     display: inline-block;
     align-items: center;
     justify-content: center;
     width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    
+    height: 44px;   
 }
 .icon{
     width: 44px;
@@ -576,6 +572,7 @@ list-footer{
     border-bottom-left-radius: 5px;
     width: 100%;
     margin: 0 15px;
+    padding-bottom: 30px;
 }
 .icons{
     width: 70px;
@@ -723,4 +720,4 @@ list-footer{
 }
 .Studio-footer{
     color: #fff;
-}}
+}

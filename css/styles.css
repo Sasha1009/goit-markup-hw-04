@@ -404,7 +404,7 @@ body {
     list-style: none;
     margin-bottom: 16px;
 }
-.social-network{
+.social-networks{
     display: flex;
     justify-content: space-between;
     width: 206px;
@@ -706,7 +706,8 @@ list-footer{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #000;
+    background-color:rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
 .connect-link:hover,
 .connect-link:focus {
@@ -715,8 +716,7 @@ list-footer{
 .icon-footer{
     width: 20px;
     height: 20px;
-    color:#fff;
-    fill: #fff;
+    fill: currentColor;
 }
 .Studio-footer{
     color: #fff;

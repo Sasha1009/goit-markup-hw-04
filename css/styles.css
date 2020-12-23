@@ -106,15 +106,17 @@ p {
     margin-right:10px;
     width: 16px;
     height: 12px;
-    fill: #afb1b8;
+    fill: currentColor;
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
     color: var(--accent-color);
 }
 .icon-phone{
-    padding-right: 10px;
-    fill: #afb1b8;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor
 }
 .email{
     font-family: "roboto", sans-serif;
@@ -244,11 +246,9 @@ body {
     cursor: pointer;
 }
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
     max-width: 1600px;
     min-height: 251px;
-    display: block;
+    margin: 94px auto 0 auto;
 }
 .list {
     list-style: none;
@@ -321,6 +321,9 @@ body {
 }
 .pictures{
     padding-bottom: 94px;
+    max-width: 1600px;
+    min-height: 386px;
+    margin: 94px auto 0 auto;
 }
 .team-heading{
     font-family: 'roboto', sans-serif;
@@ -417,16 +420,22 @@ body {
     width: 44px;
     height: 44px;   
 }
-.icon{
+.social-icon{
     width: 44px;
     height: 44px;
     padding: 12px;
-    fill: #afb1b8;
+    color: #afb1b8;
 }
-.icon:hover,
-.icon:focus {
+.icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.social-icon:hover,
+.social-icon:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
+    color: #fff;
 }
 .footer{
     background: #2F303A;
@@ -586,11 +595,17 @@ list-footer{
     fill: var(--accent-color);
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+.container-header{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 auto;
 }
 .container-footer{
     max-width: 1600px;
@@ -615,73 +630,44 @@ list-footer{
     justify-content: center;
     width: 170px;
     height: 90px;
+    color: #afb1b8;
     border: 1px solid;
     border-radius: 4px;
 }
 .icon-logo-1{
     width: 45px;
     height: 50px;
-    fill: #afb1b8;
+    fill: currentColor;
 }
 .link-icon:hover,
 .link-icon:focus {
     color: var(--accent-color);
-    fill: var(--accent-color);
-}
-.icon-logo-1:hover,
-.icon-logo-1:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
 }
 .icon-logo-2{
     width: 40px;
     height: 52px;
-    fill: #afb1b8;
-}
-.icon-logo-2:hover,
-.icon-logo-2:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 .icon-logo-3{
     width: 41px;
     height: 43px;
     fill: #afb1b8;
 }
-.icon-logo-3:hover,
-.icon-logo-3:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
 .icon-logo-4{
     width: 80px;
     height: 42px;
-    fill: #afb1b8;
-}
-.icon-logo-4:hover,
-.icon-logo-4:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 .icon-logo-5{
     width: 59px;
     height: 47px;
-    fill: #afb1b8;
+    fill: currentColor;
 }
-.icon-logo-5:hover,
-.icon-logo-5:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
+
 .icon-logo-6{
     width: 89px;
     height: 46px;
-    fill: #afb1b8;
-}
-.icon-logo-6:hover,
-.icon-logo-6:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 .logos-container{
     max-width: 1600px;

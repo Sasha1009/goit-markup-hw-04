@@ -116,7 +116,7 @@ p {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: currentColor
+    fill: currentColor;
 }
 .email{
     font-family: "roboto", sans-serif;
@@ -125,10 +125,14 @@ p {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: #757575;
     text-decoration: none;
     padding-right:50px;
     padding-left: 331px;
+}
+.email:hover,
+.email:focus {
+    color: var(--accent-color);
 }
 .email-two{
     font-family: "roboto", sans-serif;
@@ -142,8 +146,6 @@ p {
     padding-right:50px;
     padding-left: 331px;
 }
-.address-header:hover,
-.address-header:focus,
 
 .address-header{
     display: inline;
